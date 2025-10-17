@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #80a782;
+    background: linear-gradient(#80a782 20%, #ace0af, #80a782 20%);
+}
+
+header.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    color: #ffffff;
+    background: linear-gradient(#0f7a14, #129219);
+
+
+}
+header h1 {
+    margin: 0;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+}
+nav li{
+    display: inline;
+    margin-left: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+ 
+}
+main.conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 80px;
+  color: white;
+}
+.posts {
+  flex: 2;
+}
+
+.post {
+  background: #80a782;
+  border: 1px solid #154b0a;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px
+}
+
+.post img {
+  width: 80%;
+ 
+}
+
+.post h2 {
+  margin-top: 15px;
+  color: #ffffff;
+}
+
+.post a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.sidebar {
+  flex: 1;
+  margin-bottom: 30px;
+  background: #80a782;
+  border: 1px solid #154b0a;
+  padding: 20px;
+  border-radius: 10px
+}
+.sidebar ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+.sidebar section {
+  margin-bottom: 30px;
+}
+
+.sidebar h3 {
+  border-bottom: 1px solid #154b0a;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.busca input {
+  width: 70%;
+  padding: 5px;
+}
+
+.busca button {
+  padding: 6px 10px;
+  background-color: #296303;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.tag-lista span {
+  display: inline-block;
+  background: #296303;
+  padding: 5px 10px;
+  margin: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.tag-lista span:hover {
+  background-color: #2aa112;
+  transform: scale(1.05);
+}
+.categorias ul{
+    list-style: none;
+    color: #ffffff;
+
+}
+
+h3 {
+  color: #e5f3e6;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 0;
+  background: linear-gradient(#129219, #0f7a14);
+  color: #ffffff;
+}
+@media (max-width: 900px) {
+  main.conteudo {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+}
