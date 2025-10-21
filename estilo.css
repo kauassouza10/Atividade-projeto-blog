@@ -1,38 +1,42 @@
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #80a782;
-    background: linear-gradient(#80a782 20%, #ace0af, #80a782 20%);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #80a782;
+  background: linear-gradient(#80a782 20%, #ace0af, #80a782 20%);
 }
 
 header.topo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 60px;
-    color: #ffffff;
-    background: linear-gradient(#0f7a14, #129219);
-
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  color: #ffffff;
+  background: linear-gradient(#0f7a14, #129219);
 }
+
 header h1 {
-    margin: 0;
+  margin: 0;
 }
-nav ul{
-    list-style: none;
-    padding: 0;
-    margin: 5px;
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-nav li{
-    display: inline;
-    margin-left: 20px;
+
+nav ul li {
+  margin: 0 10px;
 }
-nav a {
+
+nav ul li a {
   text-decoration: none;
   color: #ffffff;
   font-weight: bold;
- 
+
 }
+
 main.conteudo {
   display: flex;
   justify-content: center;
@@ -41,6 +45,7 @@ main.conteudo {
   padding: 40px 80px;
   color: white;
 }
+
 .posts {
   flex: 2;
 }
@@ -55,7 +60,7 @@ main.conteudo {
 
 .post img {
   width: 80%;
- 
+
 }
 
 .post h2 {
@@ -67,6 +72,7 @@ main.conteudo {
   text-decoration: none;
   color: #ffffff;
 }
+
 .sidebar {
   flex: 1;
   margin-bottom: 30px;
@@ -75,6 +81,7 @@ main.conteudo {
   padding: 20px;
   border-radius: 10px
 }
+
 .sidebar ul {
   margin-left: 0;
   padding-left: 0;
@@ -90,6 +97,7 @@ main.conteudo {
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
+
 .busca input {
   width: 70%;
   padding: 5px;
@@ -112,13 +120,15 @@ main.conteudo {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .tag-lista span:hover {
   background-color: #2aa112;
   transform: scale(1.05);
 }
-.categorias ul{
-    list-style: none;
-    color: #ffffff;
+
+.categorias ul {
+  list-style: none;
+  color: #ffffff;
 
 }
 
@@ -133,13 +143,34 @@ footer {
   background: linear-gradient(#129219, #0f7a14);
   color: #ffffff;
 }
+
 @media (max-width: 900px) {
   main.conteudo {
     flex-direction: column;
-    padding: 20px;
+    padding: 65px;
   }
 
   .sidebar {
     width: 100%;
+  }
+}
+
+@media (max-width:768px) {
+  navi ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+    padding: 10px;
+    margin-left: 8px;
+  }
+}
+
+@media (max-width:768px) {
+  header.topo {
+    padding: 20px;
   }
 }
